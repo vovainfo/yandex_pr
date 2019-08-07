@@ -1,0 +1,7 @@
+.place-card__like-and-count {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+

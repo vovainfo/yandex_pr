@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mesto</title>
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body>
+<div class="root">
+    <header class="header root__section">
+        <img src="./images/logo.svg" alt="mesto logo" class="logo">
+    </header>
+    <div class="profile root__section">
+        <div class="user-info">
+            <div class="user-info__photo"></div>
+            <div class="user-info__data">
+                <h1 class="user-info__name">имярек</h1>
+                <p class="user-info__job">исследователь</p>
+                <button class="button user-info__edit">Edit</button>
+            </div>
+            <button class="button user-info__button">+</button>
+        </div>
+    </div>
+    <div class="places-list root__section">
+    </div>
+    <div class="popup" id="add-card">
+        <div class="popup__content">
+            <img src="./images/close.svg" alt="" class="popup__close">
+            <h3 class="popup__title">Новое место</h3>
+            <form class="popup__form" name="new">
+                <input type="text" name="name" class="popup__input popup__input_type_name js-validate-2-30" placeholder="Название" id="new-name">
+                <div class="popup__input-error" aria-live="polite" id="error-new-name"></div>
+                <input name="link" required type="url" class="popup__input popup__input_type_link-url js-validate-url"
+                       placeholder="Ссылка на картинку" id="new-link">
+                <div class="popup__input-error" aria-live="polite" id="error-new-link"></div>
+                <button type class="button popup__button">+</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup" id="update-avatar">
+        <div class="popup__content">
+            <img src="./images/close.svg" alt="" class="popup__close">
+            <h3 class="popup__title">Обновить аватар</h3>
+            <form class="popup__form" name="update-avatar">
+                <input name="link" required type="url" class="popup__input popup__input_type_link-url js-validate-url"
+                       placeholder="Ссылка на аватар" id="new-avatar">
+                <div class="popup__input-error" aria-live="polite" id="error-new-avatar"></div>
+                <button type class="button popup__button popup__button_text18">Сохранить</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup" id="profile">
+        <div class="popup__content">
+            <img src="./images/close.svg" alt="" class="popup__close">
+            <h3 class="popup__title">Редактировать профиль</h3>
+            <form class="popup__form" name="profile">
+                <input type="text" name="name" class="popup__input js-validate-2-30" placeholder="Имя" id="profile-name">
+                <div class="popup__input-error" aria-live="polite" id="error-profile-name"></div>
+                <input type="text" name="job" class="popup__input js-validate-2-30" placeholder="О себе" id="profile-job">
+                <div class="popup__input-error" aria-live="polite" id="error-profile-job"></div>
+                <button type class="button popup__button popup__button_text18">Сохранить</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup" id="big-size-image">
+        <div class="popup__content-image">
+            <img src="./images/close.svg" alt="" class="popup__close">
+            <img src="https://images.unsplash.com/photo-1560098332-0455d6f13087" class="popup__image">
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

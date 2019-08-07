@@ -1,0 +1,16 @@
+.popup__image {
+    max-width: 80vw;
+    max-height: 80vh;
+    background-image: url("https://images.unsplash.com/photo-1560098332-0455d6f13087");
+    background-color: #fff;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/*
+@media screen and (max-width: 540px) {
+    .popup__content {
+        width: calc(100% - 60px);
+    }
+}
+*/

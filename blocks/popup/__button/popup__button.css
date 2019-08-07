@@ -1,0 +1,15 @@
+@import url(./_text18/popup__button_text18.css);
+
+.popup__button {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  margin-top: 48px;
+  color: rgba(0, 0, 0, .2);
+  font-size: 36px;
+}
+
+.popup__button_enable {
+  color: rgba(255, 255, 255);
+  background: black;
+}
